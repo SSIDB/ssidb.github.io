@@ -6,11 +6,11 @@ SSIDB (Semantic Surgical Image DataBase), a large-scale dataset consisting of re
 a visual recognition dataset in computer vision-based surgical field.
 
 ## Data Description
-* Real: Real data obtained from gastrectomy surgery videos
-* Synthetic(SYN): Synthetic data obtained from a virtual patient model built in the Unity envrionment
-* Domain Randomization(DR): Synthetic data with domain randomization method obtained from a virtual patient model built in the Unity envrionment
-* SEAN/SPADE: Semantic image synthesis(SEAN/SPADE) data generated from SYN/DR
-  * DR for SEAN/SPADE: Unlike original DR, instruments are copied from original DR and pasted on the Real data for better synthesis.
+* **Real:** Real data obtained from gastrectomy surgery videos
+* **Synthetic(SYN):** Synthetic data obtained from a virtual patient model built in the Unity envrionment
+* **Domain Randomization(DR):** Synthetic data with domain randomization method obtained from a virtual patient model built in the Unity envrionment
+* **SEAN/SPADE:** Semantic image synthesis(SEAN/SPADE) data generated from SYN/DR
+  * **DR for SEAN/SPADE:** Unlike original DR, instruments are copied from original DR and pasted on the Real data for better synthesis.
 
 ### Original Data
 Example images
