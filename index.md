@@ -23,8 +23,8 @@ a visual recognition dataset in computer vision-based surgical field.
 ### Semantic Image Synthesis Data
 | Data Type | Original                | SEAN                     | SPADE                     |
 | --------- | ----------------------- | ------------------------ | ------------------------- |
-| SYN       | ![](./figs/syn_org.jpg) | ![](./figs/sean_syn.jpg) | ![](./figs/spade_syn.jpg) |
-| DR        | ![](./figs/dr_org.jpg)  | ![](./figs/sean_dr.jpg)  | ![](./figs/spade_dr.jpg)  |
+| SYN       |  <img src="./figs/syn_org.jpg" width="200"> |  <img src="./figs/sean_syn.jpg" width="200"> | <img src="./figs/spade_syn.jpg" width="200"> |
+| DR        |  <img src="./figs/dr_org.jpg" width="200"> | <img src="./figs/sean_dr.jpg" width="200">  | <img src="./figs/spade_dr.jpg" width="200">  |
 
 
 
