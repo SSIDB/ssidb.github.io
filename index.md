@@ -13,7 +13,7 @@ a visual recognition dataset in computer vision-based surgical field.
   * DR for SEAN/SPADE: Unlike original DR, instruments are copied from original DR and pasted on the Real data for better synthesis.
 
 ### Original Data
-* Example images
+Example images
 
 | Data Type | Image                                       |
 | --------- | ------------------------------------------- |
@@ -23,7 +23,7 @@ a visual recognition dataset in computer vision-based surgical field.
 
 
 ### Semantic Image Synthesis Data
-* Example images
+Example images
 
 | Data Type | Original                | SEAN                     | SPADE                     |
 | --------- | ----------------------- | ------------------------ | ------------------------- |
@@ -87,20 +87,20 @@ a visual recognition dataset in computer vision-based surgical field.
 |           |      |
 
 ## Model Zoo
-* You can download models and test them.
+You can download models and test them.
 
 | Task                  | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
 | --------------------- | ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
-| Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1           | 74.68/82.99/87.72                                 |      |
-| Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/83.81(**+0.82**)/88.09(**+0.37**) |      |
+| Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |      |
+| Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |      |
 
 
 | Task                  | Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 | Link |
 | --------------------- | --------------------------------------------- | ------------- | ------------------- | ----------------------------- | ---- |
-| Instance segmentation | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/55.0                     |      |
-| Instance segmentation | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/57.2(**+2.2**) |      |
+| Instance segmentation | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |      |
+| Instance segmentation | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |      |
 | Instance segmentation | Cascade Mask R-CNN                            | Resnet101-FPN | Real1               | 51.2/51.0                     |      |
-| Instance segmentation | Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/53.6(**+2.6**) |      |
+| Instance segmentation | Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |      |
 
 
 ## Baseline Models
