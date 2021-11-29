@@ -73,7 +73,7 @@ Example images
 | The Other Tissues               | 3367  | 0    | 0    | 1236    |
 | Background                      | 3375  | 3300 | 1228 | 1236    |
 
-## Per-class Performance
+## Per-class Performance(Real vs Synthetic)
 ### Instance Segmentation
 ![](./figs/bboxap.png)
 ![](./figs/maskap.png)
