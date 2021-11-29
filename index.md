@@ -87,20 +87,21 @@ Example images
 |           |      |
 
 ## Model Zoo
-You can download models and test them.
+You can download models and test them.<br />
 
-| Task                  | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
-| --------------------- | ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
-| Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |      |
-| Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |      |
+**Semantic Segmentation**
+| Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
+| ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
+| DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |      |
+| DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |      |
 
-
-| Task                  | Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 | Link |
-| --------------------- | --------------------------------------------- | ------------- | ------------------- | ----------------------------- | ---- |
-| Instance segmentation | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |      |
-| Instance segmentation | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |      |
-| Instance segmentation | Cascade Mask R-CNN                            | Resnet101-FPN | Real1               | 51.2/51.0                     |      |
-| Instance segmentation | Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |      |
+**Instance Segmnetation**
+| Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 | Link |
+| --------------------------------------------- | ------------- | ------------------- | ----------------------------- | ---- |
+| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |      |
+| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |      |
+| Cascade Mask R-CNN                            | Resnet101-FPN | Real1               | 51.2/51.0                     |      |
+| Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |      |
 
 
 ## Baseline Models
