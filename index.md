@@ -13,6 +13,7 @@ a visual recognition dataset in computer vision-based surgical field.
   * DR for SEAN/SPADE: Unlike original DR, instruments are copied from original DR and pasted on the Real data for better synthesis.
 
 ### Original Data
+* Example images
 
 | Data Type | Image                                       |
 | --------- | ------------------------------------------- |
@@ -22,6 +23,7 @@ a visual recognition dataset in computer vision-based surgical field.
 
 
 ### Semantic Image Synthesis Data
+* Example images
 
 | Data Type | Original                | SEAN                     | SPADE                     |
 | --------- | ----------------------- | ------------------------ | ------------------------- |
@@ -85,6 +87,7 @@ a visual recognition dataset in computer vision-based surgical field.
 |           |      |
 
 ## Model Zoo
+* You can download models and test them.
 
 | Task                  | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
 | --------------------- | ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
