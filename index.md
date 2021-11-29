@@ -13,6 +13,7 @@ a visual recognition dataset in computer vision-based surgical field.
   * DR for SEAN/SPADE: Unlike original DR, instruments are copied from original DR and pasted on the Real data for better synthesis.
 
 ### Original Data
+
 | Data Type | Image                                       |
 | --------- | ------------------------------------------- |
 | Real      | <img src="./figs/org_real.jpg" width="500"> |
@@ -21,6 +22,7 @@ a visual recognition dataset in computer vision-based surgical field.
 
 
 ### Semantic Image Synthesis Data
+
 | Data Type | Original                | SEAN                     | SPADE                     |
 | --------- | ----------------------- | ------------------------ | ------------------------- |
 | SYN       |  <img src="./figs/syn_org.jpg" width="200"> |  <img src="./figs/sean_syn.jpg" width="200"> | <img src="./figs/spade_syn.jpg" width="200"> |
@@ -83,6 +85,7 @@ a visual recognition dataset in computer vision-based surgical field.
 |           |      |
 
 ## Model Zoo
+
 | Task                  | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
 | --------------------- | ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
 | Semantic segmentation | DeepLab V3+ | ResNeSt  | Real1           | 74.68/82.99/87.72                                 |      |
