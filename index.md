@@ -34,7 +34,7 @@ Example images
 
 
 
-## Data Statistics
+## Data Statistics(Count)
 * Data statistics for cross-validation set 1
 * SIS: Semantic Image Synthesis(SEAN/SPADE) data
   
@@ -90,12 +90,14 @@ Example images
 You can download models and test them.<br />
 
 **Semantic Segmentation**
+
 | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
 | ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
 | DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |      |
 | DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |      |
 
 **Instance Segmnetation**
+
 | Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 | Link |
 | --------------------------------------------- | ------------- | ------------------- | ----------------------------- | ---- |
 | Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |      |
