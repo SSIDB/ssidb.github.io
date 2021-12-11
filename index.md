@@ -89,33 +89,35 @@ Example images
 ## Model Zoo
 You can download models and test them.<br />
 
-**Semantic Segmentation**
+**Semantic Segmentation([link](https://drive.google.com/drive/folders/1nJn4CQ-97fFQMNblaPNF_Hm__-udzSkc?usp=sharing))**
 
-| Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    | Link |
-| ----------- | -------- | --------------- | ------------------------------------------------- | ---- |
-| DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |      |
-| DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |      |
+| Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    |
+| ----------- | -------- | --------------- | ------------------------------------------------- |
+| DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |
+| DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |
 
-**Instance Segmnetation**
+**Instance Segmnetation([link])(https://drive.google.com/drive/folders/1wrekuhwcTSnFfCL7y1wqYhcElzBlKo8n?usp=sharing)**
 
-| Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 | Link |
-| --------------------------------------------- | ------------- | ------------------- | ----------------------------- | ---- |
-| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |      |
-| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |      |
-| Cascade Mask R-CNN                            | Resnet101-FPN | Real1               | 51.2/51.0                     |      |
-| Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |      |
+| Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 |
+| --------------------------------------------- | ------------- | ------------------- | ----------------------------- |
+| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |
+| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |
+| Cascade Mask R-CNN                            | Resnet101-FPN | Real1               | 51.2/51.0                     |
+| Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |
 
 
 ## Baseline Models
 ### Semantic Segmentation
 #### Installation
-* Follow instruction from mmsegmenetation offical repository. v0.19.0 is tested on DGX A100 server.
+* Follow instruction from [mmsegmenetation offical](https://github.com/open-mmlab/mmsegmentation) repository(v0.19.0).
+
 #### Test
-`$`
+* You can try on [demo images](https://drive.google.com/drive/folders/1wdSpFdfNUdWc3b6HphyK0G7GJJ4oLg4G?usp=sharing)
 
 
 ### Instance Segmentation
 #### Installation
-* Follow instruction from mmsegmenetation offical repository. v2.18.1 is tested on DGX A100 server.
+* Follow instruction from [mmdetection](https://github.com/open-mmlab/mmdetection) offical repository(v0.19.0).
+
 #### Test
-`$`
+* You can try on [demo images](https://drive.google.com/drive/folders/1wdSpFdfNUdWc3b6HphyK0G7GJJ4oLg4G?usp=sharing)
