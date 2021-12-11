@@ -74,7 +74,7 @@ Example images
 | Background                      | 3375  | 3300 | 1228 | 1236    |
 
 ## Per-class Performance(Real vs Synthetic)
-### Instance Segmentation
+### Instance Segmentation(Performance differences between Synthetic and Real)
 ![](./figs/bboxap.png)
 ![](./figs/maskap.png)
 
