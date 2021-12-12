@@ -109,15 +109,26 @@ You can download models and test them.<br />
 ## Baseline Models
 ### Semantic Segmentation
 #### Installation
-* Follow instruction from [mmsegmenetation offical](https://github.com/open-mmlab/mmsegmentation) repository(v0.19.0).
+* Download source code and install from [our mmsegmentation](https://github.com/SSIDB/mmsegmentation) which we modified for our use.
 
 #### Test
-* You can try on [demo images](https://drive.google.com/drive/folders/1wdSpFdfNUdWc3b6HphyK0G7GJJ4oLg4G?usp=sharing)
+* Download config & checkpoints above and follow instructions below.
+```bash
+$cd mmsegmentation/demo  # change directory to demo in mmsegmentation
+$python3 demo_images/{demo.jpg} \
+{config.py} {checkpoint.pth}
+```
 
 
 ### Instance Segmentation
 #### Installation
-* Follow instruction from [mmdetection](https://github.com/open-mmlab/mmdetection) offical repository(v0.19.0).
+* Download source code and install from [our mmdetection](https://github.com/SSIDB/mmdetection) which we modified for our use.
 
 #### Test
-* You can try on [demo images](https://drive.google.com/drive/folders/1wdSpFdfNUdWc3b6HphyK0G7GJJ4oLg4G?usp=sharing)
+* Download config & checkpoints above and follow instructions below.
+```bash
+$cd mmdetection/demo  # change directory to demo in mmdetection
+$python3 demo_images/{demo.jpg} \
+{config.py} {checkpoint.pth}
+```
+
