@@ -89,14 +89,14 @@ Example images
 ## Model Zoo
 You can download models and test them.<br />
 
-**Semantic Segmentation([link](https://drive.google.com/drive/folders/1nJn4CQ-97fFQMNblaPNF_Hm__-udzSkc?usp=sharing))**
+**Semantic Segmentation([link](https://drive.google.com/drive/folders/159lmAyghNB8jV9mSwYI3cFIcKhqVtzId?usp=sharing))**
 
 | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    |
 | ----------- | -------- | --------------- | ------------------------------------------------- |
 | DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |
 | DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |
 
-**Instance Segmnetation([link](https://drive.google.com/drive/folders/1wrekuhwcTSnFfCL7y1wqYhcElzBlKo8n?usp=sharing))**
+**Instance Segmentation([link](https://drive.google.com/drive/folders/1f0bOPiVqWMWvSg-9JBQPTE8WwhFEOGvz?usp=sharing))**
 
 | Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 |
 | --------------------------------------------- | ------------- | ------------------- | ----------------------------- |
