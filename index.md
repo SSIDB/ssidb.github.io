@@ -115,7 +115,7 @@ You can download models and test them.<br />
 * Download config & checkpoints above and follow instructions below.
 ```bash
 $cd mmsegmentation/demo  # change directory to demo in mmsegmentation
-$python3 demo_images/{demo.jpg} \
+$python3 image_demo.py demo_images/{demo.jpg} \
 {config.py} {checkpoint.pth}
 ```
 
@@ -128,7 +128,7 @@ $python3 demo_images/{demo.jpg} \
 * Download config & checkpoints above and follow instructions below.
 ```bash
 $cd mmdetection/demo  # change directory to demo in mmdetection
-$python3 demo_images/{demo.jpg} \
+$python3 image_demo.py demo_images/{demo.jpg} \
 {config.py} {checkpoint.pth}
 ```
 
