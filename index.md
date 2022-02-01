@@ -1,8 +1,6 @@
 # SSIDB: Large-scale Dataset for Semantic Surgical Image Using Semantic Image Synthesis with Virtual Patient Model
 ![main figure](./figs/main.fig.png) The process of generating and evaluating surgical image segmentation data of the SSIDB datset
-<p aling="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+<div style="text-align: right"><iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## What is SSIDB dataset?
 SSIDB (Semantic Surgical Image DataBase), a large-scale dataset consisting of real and synthetic data based on a virtual patient model and generative models, is an efficient solution to obtain surgery data. SSIDB is a dataset for pixel-level localization of surgical instruments and organs. The real data was constructed using 40 cases of distal gastrectomy videos in consideration of demographic and clinical variations. SSIDB provides virtual model-based semantic image synthesis data for the first time as
