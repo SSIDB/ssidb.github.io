@@ -114,7 +114,7 @@ You can download models and test them.<br />
 ## Baseline Models
 ### Semantic Segmentation
 #### Installation
-* Download source code and install from [our mmsegmentation](https://github.com/SSIDB/mmsegmentation) which we modified for our use. Evaluation code is included in the mmsegmentation training process. While user can also use [COCO API](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/coco.py) for the evaluation metrics.
+* Download source code and install from [our mmsegmentation](https://github.com/SSIDB/mmsegmentation) which we modified for our use. 
 
 #### Test
 * Download config & checkpoints above and follow instructions below.
@@ -124,10 +124,13 @@ $python3 image_demo.py demo_images/{demo.jpg} \
 {config.py} {checkpoint.pth}
 ```
 
+#### Evaluatiton Metrics
+* Evaluation code is included in the mmsegmentation training process. While user can also use [COCO API](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/coco.py) for the evaluation metrics.
+
 
 ### Instance Segmentation
 #### Installation
-* Download source code and install from [our mmdetection](https://github.com/SSIDB/mmdetection) which we modified for our use. Evaluation code is included in the mmdetection training process. While user can also use [COCO API](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/coco.py) for the evaluation metrics.
+* Download source code and install from [our mmdetection](https://github.com/SSIDB/mmdetection) which we modified for our use.
 
 #### Test
 * Download config & checkpoints above and follow instructions below.
@@ -137,3 +140,5 @@ $python3 image_demo.py demo_images/{demo.jpg} \
 {config.py} {checkpoint.pth}
 ```
 
+#### Evaluatiton Metrics
+* Evaluation code is included in the mmdetection training process. While user can also use [COCO API](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/coco.py) for the evaluation metrics.
