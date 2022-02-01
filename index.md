@@ -1,7 +1,7 @@
 # SSIDB: Large-scale Dataset for Semantic Surgical Image Using Semantic Image Synthesis with Virtual Patient Model
 ![main figure](./figs/main.fig.png) The process of generating and evaluating surgical image segmentation data of the SSIDB datset
-<div style="text-align: right">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 Baseline Model Inference on a Gastrectomy Test Video
 </div>
 
