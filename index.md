@@ -12,6 +12,7 @@ release our data set to encourage further study. First, we created three cross-v
 with various state-of-the-art instance and semantic segmentation models and succeed in highly improving our segmentation models with the help of synthetic training data.
 
 ## How this work is different with exisiting works?
+
 | Research | How many classes (#) to translate? | Recognition models (#)| Real image data | Do they provide real iamge data with annotations? |
 | --- | --- | --- | --- | --- |
 | [11] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
