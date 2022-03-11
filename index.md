@@ -1,30 +1,41 @@
-# SSIDB: Large-scale Dataset for Semantic Surgical Image Using Semantic Image Synthesis with Virtual Patient Model
-![main figure](./figs/main.fig.png) The process of generating and evaluating surgical image segmentation data of the SSIDB datset
+# Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment
+![main figure](./figs/main.fig.png) The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment
 <div style="text-align: center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 Baseline Model Inference on a Gastrectomy Test Video
 </div>
 
 
-## What is SSIDB dataset?
-SSIDB (Semantic Surgical Image DataBase), a large-scale dataset consisting of real and synthetic data based on a virtual patient model and generative models, is an efficient solution to obtain surgery data. SSIDB is a dataset for pixel-level localization of surgical instruments and organs. The real data was constructed using 40 cases of distal gastrectomy videos in consideration of demographic and clinical variations. SSIDB provides virtual model-based semantic image synthesis data for the first time as
-a visual recognition dataset in computer vision-based surgical field.
+## Abstract
+Several researchers conducted image synthesis research for surgical vision to decrease training data generation costs. However, the previous works have limited results for real-world applications with simple simulators, including only a few organs and surgical tools, and outdated segmentation models to evaluate the quality of the image. Furthermore, none of the research releases complete data sets to the public to enable further study. Therefore, we provide novel methods and extensive experiments for surgical scene segmentation using semantic image synthesis with a complex virtual surgery environment. In addition, we
+release our data set to encourage further study. First, we created three cross-validation sets of real image data for baselines while alleviating class-imbalanced problem. Second, we created a virtual surgery environment in the unity engine with five organs from real patient CT data and 22 the da Vinci surgical instruments from actual measurements. Third, We convert this environment photo-realistically with representative semantic image synthesis models, SEAN and SPADE. Lastly we evaluate it
+with various state-of-the-art instance and semantic segmentation models and succeed in highly improving our segmentation models with the help of synthetic training data.
+
+## How this work is different with exisiting works?
+| Research | How many classes (#) to translate? | Recognition models (#)| Real image data | Do they provide real iamge data with annotations? |
+| --- | --- | --- | --- | --- |
+| [11] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
+| [12] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
+| [13] | Laparoscopic tools (5) | Semantic segmentation (1)| Own laparoscopic data | X |
+| Our work | Laparoscopic/Robotic tools (22) + Organs(5) | Instance segmentation (3) + Semantic segmentation (2)| Own robotic gasstrectomy data | O |
+
 
 ## Data Description
-* **Real:** Real data obtained from gastrectomy surgery videos
-* **Synthetic(SYN):** Synthetic data obtained from a virtual patient model built in the Unity envrionment
-* **Domain Randomization(DR):** Synthetic data with domain randomization method obtained from a virtual patient model built in the Unity envrionment
-* **SEAN/SPADE:** Semantic image synthesis(SEAN/SPADE) data generated from SYN/DR
-  * **DR for SEAN/SPADE:** Unlike original DR, instruments are copied from original DR and pasted on the Real data for better synthesis.
+* **Real(R):** Real data obtained from gastrectomy surgery videos
+* **Synthetic:** Synthetic data obtained from a virtual patient model built in the Unity envrionment
+  * **Manual Synthetic (MS):** Synthetic data generated manually by medical professionals
+  * **Domain Randomized Synthetic (DRS):** Synthetic data generated with domain randomization method
+* **SEAN/SPADE:** Semantic image synthesis on synthetic data with SEAN and SPADE models  
+  * **DRS with semantic image snythesis:** Modifed DRS with Copy-paste kinds of augmentation
 
 ### Original Data
 Example images
 
 | Data Type | Image                                       |
 | --------- | ------------------------------------------- |
-| Real      | <img src="./figs/org_real.jpg" width="500"> |
-| SYN       | <img src="./figs/org_syn.jpg" width="500">  |
-| DR        | <img src="./figs/org_dr.jpg" width="500">   |
+| Real(R)      | <img src="./figs/org_real.jpg" width="500"> |
+| Manual Synthetic(MS)       | <img src="./figs/org_syn.jpg" width="500">  |
+| Domain Randomized Synthetic(DRS)        | <img src="./figs/org_dr.jpg" width="500">   |
 
 
 ### Semantic Image Synthesis Data
@@ -32,8 +43,8 @@ Example images
 
 | Data Type | Original                | SEAN                     | SPADE                     |
 | --------- | ----------------------- | ------------------------ | ------------------------- |
-| SYN       |  <img src="./figs/syn_org.jpg" width="200"> |  <img src="./figs/sean_syn.jpg" width="200"> | <img src="./figs/spade_syn.jpg" width="200"> |
-| DR        |  <img src="./figs/dr_org.jpg" width="200"> | <img src="./figs/sean_dr.jpg" width="200">  | <img src="./figs/spade_dr.jpg" width="200">  |
+| MS       |  <img src="./figs/syn_org.jpg" width="200"> |  <img src="./figs/sean_syn.jpg" width="200"> | <img src="./figs/spade_syn.jpg" width="200"> |
+| DRS        |  <img src="./figs/dr_org.jpg" width="200"> | <img src="./figs/sean_dr.jpg" width="200">  | <img src="./figs/spade_dr.jpg" width="200">  |
 
 
 
@@ -43,7 +54,7 @@ Example images
 * Data statistics for cross-validation set 1
 * SIS: Semantic Image Synthesis(SEAN/SPADE) data
   
-| Class                           | Real1 | SYN  | DR   | SIS(DR) |
+| Class                           | R1 | MS  | DRS   | SIS(DRS) |
 | ------------------------------- | ----- | ---- | ---- | ------- |
 | Harmonic Ace Head               | 1313  | 289  | 591  | 539     |
 | Harmonic Ace Body               | 1267  | 297  | 766  | 559     |
@@ -98,17 +109,17 @@ You can download models and test them.<br />
 
 | Algorithm   | Backbone | Data            | mIoU/mAcc/aAcc                                    |
 | ----------- | -------- | --------------- | ------------------------------------------------- |
-| DeepLab V3+ | ResNeSt  | Real1           | 74.68/<br />82.99/<br />87.72                                 |
-| DeepLab V3+ | ResNeSt  | Real1+SEAN(SYN) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |
+| DeepLab V3+ | ResNeSt  | R1           | 74.68/<br />82.99/<br />87.72                                 |
+| DeepLab V3+ | ResNeSt  | R1+SEAN(MS) | 75.58(**+0.9**)/<br />83.81(**+0.82**)/<br />88.09(**+0.37**) |
 
 **Instance Segmentation([link](https://drive.google.com/drive/folders/1f0bOPiVqWMWvSg-9JBQPTE8WwhFEOGvz?usp=sharing))**
 
 | Algorithm                                     | Backbone      | Data                | bboxAP/maskAP                 |
 | --------------------------------------------- | ------------- | ------------------- | ----------------------------- |
-| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1               | 53.9/<br />55.0                     |
-| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | Real1+SEAN(SYN)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |
-| Cascade Mask R-CNN                            | Resnet101-FPN | Real1               | 51.2/51.0                     |
-| Cascade Mask R-CNN                            | Resnet101-FPN | Real1+SPADE(SYN+DR) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |
+| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | R1               | 53.9/<br />55.0                     |
+| Hybrid Task Cascade for Instance Segmentation | Resnet101-FPN | R1+SEAN(MS)     | 54.3(**+0.4**)/<br />57.2(**+2.2**) |
+| Cascade Mask R-CNN                            | Resnet101-FPN | R1               | 51.2/51.0                     |
+| Cascade Mask R-CNN                            | Resnet101-FPN | R1+SPADE(MS+DRS) | 52.5(**+1.3**)/<br />53.6(**+2.6**) |
 
 
 ## Baseline Models
