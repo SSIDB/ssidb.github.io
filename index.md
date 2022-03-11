@@ -1,4 +1,4 @@
-# Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment
+<center> <h1>Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment</h1> </center>
 ![main figure](./figs/main.fig.png) The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment
 <div style="text-align: center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
