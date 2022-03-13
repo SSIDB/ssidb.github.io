@@ -91,7 +91,7 @@ Example images
 | Background                      | 3375  | 3300 | 1228 | 1236    |
 
 ## Top-8 classwise Performance(Real vs Synthetic)
-Relative synthetic data set performance compared to real data set. The peformance is calauted by $(\text{Metric}_{\text{Syn}} - \text{Metric}_\text{Real}) \div \text{Metric}_\text{Real} \times 100$.
+Relative synthetic data set performance compared to real data set. The peformance is calauted by $$(\text{Metric}_{\text{Syn}} - \text{Metric}_\text{Real}) \div \text{Metric}_\text{Real} \times 100$$.
 
 ### Instance Segmentation
 ![](./figs/inst_ap.jpg)
