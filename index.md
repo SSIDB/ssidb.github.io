@@ -14,7 +14,7 @@ with various state-of-the-art instance and semantic segmentation models and succ
 ## How this work is different with exisiting works?
 
 | Research | How many classes (#) to translate? | Recognition models (#)| Real image data | Do they provide real iamge data with annotations? |
-| --- | --- | --- | --- | --- |
+|:---:| --- | --- | --- | --- |
 | [11] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
 | [12] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
 | [13] | Laparoscopic tools (5) | Semantic segmentation (1)| Own laparoscopic data | X |
@@ -33,7 +33,7 @@ with various state-of-the-art instance and semantic segmentation models and succ
 Example images
 
 | Data Type | Image                                       |
-| --------- | ------------------------------------------- |
+|:---------:| ------------------------------------------- |
 | Real(R)      | <img src="./figs/org_real.jpg" width="500"> |
 | Manual Synthetic(MS)       | <img src="./figs/org_syn.jpg" width="500">  |
 | Domain Randomized Synthetic(DRS)        | <img src="./figs/org_dr.jpg" width="500">   |
@@ -43,7 +43,7 @@ Example images
 Example images
 
 | Data Type | Original                | SEAN                     | SPADE                     |
-| --------- | ----------------------- | ------------------------ | ------------------------- |
+|:---------:| ----------------------- | ------------------------ | ------------------------- |
 | MS       |  <img src="./figs/syn_org.jpg" width="200"> |  <img src="./figs/sean_syn.jpg" width="200"> | <img src="./figs/spade_syn.jpg" width="200"> |
 | DRS        |  <img src="./figs/dr_org.jpg" width="200"> | <img src="./figs/sean_dr.jpg" width="200">  | <img src="./figs/spade_dr.jpg" width="200">  |
 
