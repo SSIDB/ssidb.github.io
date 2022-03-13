@@ -90,10 +90,14 @@ Example images
 | The Other Tissues               | 3367  | 0    | 0    | 1236    |
 | Background                      | 3375  | 3300 | 1228 | 1236    |
 
-## Per-class Performance(Real vs Synthetic)
-### Instance Segmentation(Performance differences between Synthetic and Real)
-![](./figs/bboxap.png)
-![](./figs/maskap.png)
+## Top-8 classwise Performance(Real vs Synthetic)
+Relative synthetic data set performance compared to real data set. The peformance is calauted by $(\text{Metric}_{\text{Syn}} - \text{Metric}_\text{Real}) \div \text{Metric}_\text{Real} \times 100$.
+
+### Instance Segmentation
+![](./figs/inst_ap.jpg)
+
+### Semantic Segmentation
+![](./figs/semt_ap.jpg)
 
 
 ## Data Download
