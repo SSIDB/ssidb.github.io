@@ -14,7 +14,7 @@ with various state-of-the-art instance and semantic segmentation models and succ
 ## How this work is different with exisiting works?
 
 | Research | How many classes (#) to translate? | Recognition models (#)| Real image data | Do they provide real iamge data with annotations? |
-|:---:| --- | --- | --- | --- |
+|:---:| --- | --- | --- |:---:|
 | [11] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
 | [12] | Liver class only (1) | Semantic segmentation (1)| Re-annotate Chole80 | X |
 | [13] | Laparoscopic tools (5) | Semantic segmentation (1)| Own laparoscopic data | X |
@@ -91,13 +91,16 @@ Example images
 | Background                      | 3375  | 3300 | 1228 | 1236    |
 
 ## Top-8 classwise Performance(Real vs Synthetic)
-Relative synthetic data set performance compared to real data set. The peformance is calauted by $$(\text{Metric}_{\text{Syn}} - \text{Metric}_\text{Real}) \div \text{Metric}_\text{Real} \times 100$$.
+Relative synthetic data set performance compared to real data set. The peformance is calauted by
+
+$$(\text{Metric}_{\text{Syn}} - \text{Metric}_\text{Real}) \div \text{Metric}_\text{Real} \times 100$$
 
 ### Instance Segmentation
-![](./figs/inst_ap.jpg)
+<img src="./figs/inst_ap.jpg" height="169">
 
-### Semantic Segmentation
-![](./figs/semt_ap.jpg)
+### Semantic Segmentation     
+<img src="./figs/semt_ap.jpg" height="169">
+
 
 
 ## Data Download
