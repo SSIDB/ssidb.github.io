@@ -1,3 +1,7 @@
+---
+use_math: true
+---
+
 <center> <h1>Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment</h1> </center>
 ![main figure](./figs/main.fig.png) The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment
 <div style="text-align: center">
