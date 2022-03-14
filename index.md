@@ -1,7 +1,3 @@
----
-use_math: true
----
-
 <center> <h1>Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment</h1> </center>
 ![main figure](./figs/main.fig.png) The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment
 <div style="text-align: center">
@@ -96,8 +92,8 @@ Example images
 
 ## Top-8 classwise Performance(Real vs Synthetic)
 Relative synthetic data set performance compared to real data set. The peformance is calauted by
+<img src="./figs/relative_metric.jpg" height="50">
 
-$$(\text{Metric}_{\text{Syn}} - \text{Metric}_\text{Real}) \div \text{Metric}_\text{Real} \times 100$$
 
 ### Instance Segmentation
 <img src="./figs/inst_ap.jpg" height="169">
