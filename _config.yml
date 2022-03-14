@@ -1,4 +1,4 @@
-#theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman
 # Conversion
 markdown: kramdown
 highlighter: rouge
