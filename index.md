@@ -92,7 +92,9 @@ Example images
 
 ## Top-8 classwise Performance(Real vs Synthetic)
 Relative synthetic data set performance compared to real data set. The peformance is calauted by
-<img src="./figs/relative_metirc.jpg" height="50">
+<p align="center">
+ <img src="./figs/relative_metirc.jpg" height="50" />
+</p>
 
 
 ### Instance Segmentation
