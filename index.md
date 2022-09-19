@@ -1,4 +1,10 @@
 <center> <h1>Surgical Scene Segmentation Using Semantic Image Synthesis with a Virtual Surgery Environment</h1> </center>
+
+This work has been dony by
+Jihun Yoon**1***(yjh2020@hutom.io), SeulGi Hong**1***(sghong@hutom.io), Seungbum Hong**1**,
+Jiwon Lee**1**, Soyeon Shin**1**, Bokyung Park**1**, Nakjun Sung**1**, Hayeong Yu**1**, Sungjae Kim**1**,
+SungHyun Park**2**, Woo Jin Hyung**1,2**, and Min-Kook Choi**1†**(mkchoi@hutom.io) from **1)** Hutom, Seoul, Republic of Korea, **2)** Department of Surgery, Yonsei University College of Medicine
+
 ![main figure](./figs/main.fig.png) The schematic diagram of surgical scene segmentation using semantic image synthesis with a virtual surgery environment
 <div style="text-align: center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lQLCXpHTwNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
