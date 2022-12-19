@@ -112,11 +112,8 @@ Relative synthetic data set performance compared to real data set. The peformanc
 
 
 ## Data Download
-* Data will be available after final decision.
+* You can download the dataset from https://www.kaggle.com/datasets/yjh4374/sisvse-dataset.
 
-| Data Type | Link |
-| --------- | ---- |
-|           |      |
 
 ## Model Zoo
 You can download models and test them.<br />
